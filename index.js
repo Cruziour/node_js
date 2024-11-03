@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs').promises; // Use promises for async file operations
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const hostname = 'localhost';
 
 const server = http.createServer(async (request, response) => {
